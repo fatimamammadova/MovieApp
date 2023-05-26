@@ -1,0 +1,303 @@
+@import url('https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css');
+@import url('https://fonts.googleapis.com');
+@import url('https://fonts.gstatic.com');
+@import url('https://fonts.googleapis.com/css2?family=Lato&family=Montserrat:wght@500&family=Nunito&family=Open+Sans&family=Qwitcher+Grypen:wght@400;700&display=swap');
+@import url('button.css');
+@import url('stil.css');
+@import url('images');
+@import url('form.css');
+
+
+html {
+    scroll-behavior: smooth;
+}
+main {
+    min-height: calc(100% - 138px);
+}
+header {
+    background-color: #FC997C;
+    padding: .8rem 1.6rem;
+    position: fixed;
+    top: 0;
+    z-index: 1;
+    width: 100%;
+}
+a.logo {
+    color: #fff;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 21px;
+}
+.main-nav {
+    display: inline-block;
+    width: calc(100% - 10rem);
+    text-align: right;
+}
+.main-nav_items {
+    list-style: none;
+    margin: 0;
+}
+.main-nav_item,.main-nav_login-logo {
+    display: inline-block;
+    margin: 0 1rem;
+}
+.main-nav_item:last-child {
+    display: none;
+}
+@media (max-width: 600px) {
+    .main-nav_item,.main-nav_login-logo {
+        display: none;
+    }
+    .main-nav_item:last-child {
+        display: block;
+    }
+    .responsive .main-nav_item,.responsive .main-nav_login-logo {
+        display: block;
+        text-align: left;
+        margin-left: 1rem 0;
+    }
+    .responsive {
+        margin: 0;
+    }
+    .responsive .main-nav_item:last-child {
+        position: absolute;
+        right: 28px;
+        top: 8.5px;
+    }
+    .responsive .main-nav {
+        display: block;
+    }
+    .main-nav_items li {
+        list-style: none;
+        margin: 0;
+        padding: 0;
+    }
+}
+.main-nav_item a,.main-nav_item i {
+    color: #fff;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 20px;
+}
+.main-nav_item a:hover {
+    color: #2E4C6D;
+}
+.main-nav_item a:active {
+    color: #fff;
+}
+.main-nav_login-logo a{
+    border: 2px solid #fff;
+    border-radius: 8px;
+    padding: 4px 16px;
+    background-color: #2E4C6D;
+    color: #fff;
+}
+.main-nav_login-logo :hover {
+    color: #2E4C6D;
+    background-color: #fff;
+    border: 2px solid #2E4C6D;
+}
+.showcase {
+    /* padding: 10px; */
+    width: 100%;
+    height: 40vh;
+    position: relative;
+    background: linear-gradient(to bottom, rgba(252, 153,  124,0.2),rgba(250,81,30,0.2)), url("baag.jpeg");
+    background-position: center;
+    background-size: cover;
+}
+.showmain {
+    color: #fff;
+    position: absolute;
+    top: 60%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: rgba(46, 76, 109, 0.3);
+    padding: 2rem;
+    border-radius: 1rem;
+    width: 60%;
+}
+.howitworks {
+    padding: 1rem;
+    text-align: center;
+}
+.howitworks h1 {
+    color: #3e4555;
+    font-size: 30px;
+    font-weight: 600;
+}
+.howitworks h1,.main-row{
+    text-align: center;
+}
+.main-row,.row {
+    margin-bottom: 40px;
+} 
+.col {
+    /* display: inline-block;
+    width: 30%; */
+    padding: 16px;
+    margin: 8px;
+}
+.col i {
+    color: #FC997C;
+}
+.col h3 {
+    color: #3e4555;
+    font-size: 2.6rem;
+}
+.col h3,.col p{
+    text-align: center;   
+}
+.fetures-left {
+    background: linear-gradient(to bottom, rgba(252, 153,  124,0.2),rgba(250,81,30,0.2)), 
+    url("features222.jpeg");
+    background-position: top center;
+    background-size: cover;
+    
+}
+.features-right {
+    padding: 3rem;
+    vertical-align: top;
+    background-color: #edf5f7;
+}
+.features-right h3 {
+    font-size: 3rem;
+}
+.head {
+    text-align: center;
+    margin-bottom: 4rem;
+    margin-top: 40px;
+    color: #3e4555;
+    font-size: 3rem;
+}
+.inner-plan ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+.inner-plan ul li {
+    padding: 0;
+    margin: 6px;
+}
+@media (min-width: 768px) {
+    .mainlycard {
+        position: relative;
+        top: -20px;
+    }
+}
+.col-3 .favorite {
+    color: #FC997C;
+    padding: 8px;
+    background-color: #fff;
+    border-radius: 4px;
+}
+.recommended {
+    background-color: #396EB0 !important;
+    border-radius: 4px;
+    color: #fff;
+    transition: box-shadow 500ms;
+}
+.recommended:hover {
+    box-shadow: rgba(0, 0, 0, 0.3) 0px 19px 38px, rgba(0, 0, 0, 0.22) 0px 15px 12px;
+}
+.inner-plan {
+    background-color: #edf5f7;
+    padding: 25px 10px;
+    margin: 8px;
+    border-radius: 4px;
+    text-align: center;
+    transition: box-shadow 500ms;
+}
+.inner-plan:hover {
+    box-shadow: rgba(0, 0, 0, 0.3) 0px 19px 38px, rgba(0, 0, 0, 0.22) 0px 15px 12px;
+}
+.circlebtn {
+    color: #4d6d8f;
+    position: fixed;
+    right: 10px;
+    bottom: 10px;
+    font-size: 45px;
+    transition: color 500ms;
+}
+.circlebtn:hover {
+    color: #2E4C6D;
+}
+.information {
+    margin-top: 40px;
+    background: linear-gradient(to bottom, #fc997c 0%,#fc8b69 100%);
+    width: 100%;
+    height: 150px;
+    color: #fff;
+}
+.cols {
+    display: inline-block;
+    text-align: center;
+    width: 33%;
+    position: relative;
+}
+.c1,.c2,.c3 {
+    top: 50%;
+    left: 50%;
+    position: absolute;
+    /* transform: translate(-50%, -50%); */
+}
+.card-container {
+    padding: 10px;
+}
+.card {
+    background-color: #fff;
+    border-radius: 5px;
+    cursor: pointer;
+    box-shadow: 10px 10px 40px rgba(52,58,64,0.1);
+    transition: all .3s;
+}
+.card:hover {
+    transform: translateY(-10px);
+}
+.card-image {
+    max-height: 350px;
+}
+.card-body {
+    padding: 30px;
+}
+footer {
+    background-color: #2E4C6D;
+    padding: 30px;
+}
+footer a {
+    color: #fff;
+    font-size: 18px;
+    text-decoration: none;
+}
+footer ul {
+    margin: 0;
+    padding: 0;
+}
+footer ul li {
+    list-style-type: none;
+    display: inline-block;
+    margin-left: 5px;
+}
+#social-links {
+    text-align: right;
+}
+.fab {
+    padding: 10px;
+    font-size: 25px;
+    border-radius: 50%;
+}
+.fab:hover {
+   opacity: 0.7;
+}
+.fa-facebook {
+    background-color: #3B5998;
+    color: #fff;
+}
+.fa-twitter {
+    background-color: #55ACEE;
+    color: #fff;
+}
+.fa-instagram {
+    background-color: #125688;
+    color: #fff;
+}

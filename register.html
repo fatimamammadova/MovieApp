@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="ss.css">
+    <link rel="stylesheet" href="form.css">
+    <title>MovieApp|Form</title>
+</head>
+<body>
+    <header>
+        <div id="main-nav" class="choices">
+        <a href="#" class="logo">MovieApp</a>
+        <nav class="main-nav">
+            <ul class="main-nav_items">
+                <li class="main-nav_item"><a href="#">Filmler</a></li>
+                <li class="main-nav_item"><a href="#">Diziler</a></li>
+                <li class="main-nav_login-logo"><button class="btn btn-primary">Login</button></li>
+                <li class="main-nav_item"><a href="#" onclick="displayMenu()"><i class="fa-solid fa-bars"></i></a></li>
+            </ul>
+        </nav>
+    </div>
+    </header>
+    <main class="signup">
+        <div class="choices">
+        <div class="row">
+            <h1 class="create">Create Your Account</h1>
+        <form class="form">
+            <label for="firstname">First Name</label>
+            <input type="text" id="firstname">
+
+            <label for="lastname">Last Name</label>
+            <input type="text" id="lastname">
+
+            <label for="email">Email</label>
+            <input type="text" id="email">
+
+            <label for="password">Password</label>
+            <input type="text" id="password">
+
+            <label for="gender">Gender</label>
+            <select name="" id="gender">
+                <option value="">Select</option>
+                <option value="">Male</option>
+                <option value="">Famale</option>
+            </select>
+
+            <input type="checkbox">
+            <label for="">Agree to
+                <a href="#">Terms &amp; Conditions</a>
+            </label>
+           
+            <button class="btn btn-secondary" type="submit">Sign Up</button>
+        </form>
+    </div>
+</div>
+    </main>
+    <footer>
+        <div class="choices">
+            <div class="row">
+                <div class="col-2">
+                    <ul id="footer-links">
+                        <li><a href="#">About</a></li>
+                        <li><a href="#">Blog</a></li>
+                        <li><a href="#">Forum</a></li>
+                        <li><a href="#">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="col-2">
+                    <ul id="social-links">
+                        <li><a href="" class="fab fa-facebook"></a></li>
+                        <li><a href="" class="fab fa-twitter"></a></li>
+                        <li><a href="" class="fab fa-instagram"></a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <a href="#body" class="circlebtn">
+        <i class="fa fa-chevron-circle-up"></i>
+    </a>
+    <script>
+        function displayMenu() {
+            var link = document.getElementById("main-nav");
+            link.classList.toggle("responsive");
+        }
+    </script>
+</body>
+</html>
